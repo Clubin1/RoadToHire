@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Noto+Sans+Display&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 /*****Home Page Styling*****/
 .landingSection{
-    background: url("https://wallpapercave.com/wp/wp2074549.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(https://wallpapercave.com/wp/wp2074549.jpg);
     height: 100vh;
     width: 100vw;
     background-attachment: fixed;
@@ -15,8 +16,133 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.landingTitle{
+    font-size: 4.2rem;
+    color:white;
+    font-weight: 900;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.562);
+}
+.landingSub{
+    font-size: 1.3rem;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.562);
+}
+
+.landingLine{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.leftLine, .rightLine{
+    background: white;
+    height: .1rem;
+    width: 8rem;
+    margin-top: .6rem;
+}
+
+.landingButton{
+    color:#fff;
+    padding: .8rem 1rem .8rem 1rem;
+    font-weight: 900;
+    border: 1px solid white;
+    transition: 200ms ease all;
+    margin-left: -1rem;
+}
+
+.landingButton:hover{
+    color:#008a9c;
+    background-color: rgba(255, 255, 255, 0.904);
+}
+
+
+.landingButton2{
+    margin-left: 1rem;
+    color:#008a9c;
+    background-color: rgb(255, 255, 255);
+    padding: .8rem 1rem .8rem 1rem;
+    font-weight: 900;
+    border: 1px solid white;
+    transition: 200ms ease all;
+}
+
+.landingButton2:hover{
+    color:#005964;
+    background-color: rgba(255, 255, 255, 0.804);
+    border: 1px solid rgba(255, 255, 255, 0.804);
+}
+
+.navButton{
+    color:#fff;
+    padding: .4rem 1rem .4rem 1rem;
+    font-weight: 900;
+    border: 1px solid #008a9c;
+    background-color: #008a9c;
+    transition: 200ms ease all;
+    margin-left: -1rem;
+    margin-top: -.4rem;
+}
+.navButton:hover{
+    border: 1px solid #005964;
+    background-color: #005964;
+    color: #03383f;
+}
+.buttonCol{
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: row;
+    text-transform: capitalize;
 }
 .aboutSection{
+    height: 25rem;
+    min-height: 25rem;
+    background-color:#f8f9fa;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.aboutImage{
+    background: url(https://www.visitphilly.com/wp-content/themes/visitphilly/dist/images/WatermarkStamp.png);
+    height: 20rem;
+    width: 20rem;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    margin-top: 24rem;
+    opacity: .1;
+    right: 6rem;
+}
+
+.aboutDesc{
+    font-size: 1.2rem;
+    font-weight: 100;
+    font-family: 'Lora', serif!important;
+    line-height: 2rem;
+    color: rgb(58, 58, 58);
+    margin-top: .4rem;
+}
+
+.aboutTitle{
+    font-size: 1.4rem;
+    letter-spacing: .3rem;
+    font-family: 'Lora', serif!important;
+    color:#008a9c;
+}
+
+.blogSection{
     height: 100vh;
 }
 /*****Home Page Media queries*****/

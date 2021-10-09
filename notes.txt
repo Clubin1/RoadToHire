@@ -1,0 +1,6 @@
+Home page, contains basic information, showcase of all blog posts with buttons to link to them
+
+about page, simple facts about me and my coding journey
+
+blog page, if clicked on blog item, goes to article tag
+

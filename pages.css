@@ -121,8 +121,8 @@
     background-position: center;
     background-size: cover;
     position: absolute;
-    margin-top: 24rem;
-    opacity: .1;
+    margin-top: 25rem;
+    opacity: .09;
     right: 6rem;
 }
 
@@ -169,3 +169,7 @@
 
 
 /*****About Page Styling END*****/
+
+.footerWrapper{
+    height: 40rem;
+}

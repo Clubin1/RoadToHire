@@ -1,175 +1,312 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Noto+Sans+Display&display=swap');
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Noto+Sans+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
 /*****Home Page Styling*****/
-.landingSection{
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(https://wallpapercave.com/wp/wp2074549.jpg);
-    height: 100vh;
-    width: 100vw;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.landingSection {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(https://wallpapercave.com/wp/wp2074549.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.landingTitle,
+.hotelTitle {
+  font-size: 4.2rem;
+  color: white;
+  font-weight: 900;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.562);
+}
+.landingSub {
+  font-size: 1.3rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.562);
+}
+
+.landingLine {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.leftLine,
+.rightLine {
+  background: white;
+  height: 0.1rem;
+  width: 8rem;
+  margin-top: 0.6rem;
+}
+
+.landingButton {
+  color: #fff;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  font-weight: 900;
+  border: 1px solid white;
+  transition: 200ms ease all;
+  margin-left: -1rem;
+}
+
+.landingButton:hover {
+  color: #008a9c;
+  background-color: rgba(255, 255, 255, 0.904);
+}
+
+.landingButton2 {
+  margin-left: 1rem;
+  color: #008a9c;
+  background-color: rgb(255, 255, 255);
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  font-weight: 900;
+  border: 1px solid white;
+  transition: 200ms ease all;
+}
+
+.landingButton2:hover {
+  color: #005964;
+  background-color: rgba(255, 255, 255, 0.804);
+  border: 1px solid rgba(255, 255, 255, 0.804);
+}
+
+.hotelBtn {
+  color: #ffffff;
+  background-color: #008a9c;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  font-weight: 900;
+  border: 1px solid #008a9c;
+  transition: 200ms ease all;
+  width: 10rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.hotelBtn:hover {
+  color: #005964;
+  background-color: rgba(255, 255, 255, 0.804);
+  border: 1px solid rgba(255, 255, 255, 0.804);
+}
+.navButton {
+  color: #fff;
+  padding: 0.4rem 1rem 0.4rem 1rem;
+  font-weight: 900;
+  border: 1px solid #008a9c;
+  background-color: #008a9c;
+  transition: 200ms ease all;
+  margin-left: -1rem;
+  margin-top: -0.4rem;
+}
+.navButton:hover {
+  border: 1px solid #005964;
+  background-color: #005964;
+  color: #03383f;
+}
+
+.articleButton {
+  color: #fff;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  font-weight: 900;
+  border: 1px solid #008a9c;
+  background-color: #008a9c;
+  transition: 200ms ease all;
+  margin-top: 1rem;
+  width: 5rem;
+}
+.articleButton:hover {
+  border: 1px solid #005964;
+  background-color: #005964;
+  color: #03383f;
+}
+
+.buttonCol {
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: row;
+  text-transform: capitalize;
+}
+.aboutSection {
+  height: 25rem;
+  min-height: 25rem;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.aboutImage {
+  background: url(https://www.visitphilly.com/wp-content/themes/visitphilly/dist/images/WatermarkStamp.png);
+  height: 20rem;
+  width: 20rem;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  margin-top: 25rem;
+  opacity: 0.09;
+  right: 6rem;
+}
+
+.pageText {
+  font-size: 1.2rem;
+  font-weight: 100;
+  font: 100 !important;
+  font-family: "Lora", serif !important;
+  line-height: 2rem;
+  color: rgb(54, 54, 54);
+  margin-top: 0.4rem;
+}
+
+.hotelText {
+  font-size: 1.2rem;
+  font-weight: 100;
+  font: 100 !important;
+  font-family: "Lora", serif !important;
+  line-height: 2rem;
+  color: rgb(255, 255, 255);
+  margin-top: 1rem;
+}
+.copyright {
+  margin-left: 9rem;
+  padding-top: 1rem;
+}
+.aboutTitle {
+  font-size: 1.4rem;
+  letter-spacing: 0.3rem;
+  font-family: "Lora", serif !important;
+  color: #008a9c;
+}
+
+.blogSection {
+  height: 75rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.articleRow {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.articleCol {
+  display: flex;
+  width: 28rem;
+  flex-direction: column !important;
+}
+
+.articleTitle {
+  color: #008a9c;
+  font-size: 3rem;
+  font: bolder !important;
+}
+
+.articleImg {
+  width: 50%;
+  height: 30rem;
+}
+
+.articleLabel {
+  font-style: italic;
+  color: #16698f !important;
+}
+.articleLabel::before {
+  content: " -";
+}
+.articleOffset {
+  margin-top: 7rem;
+}
+
+.hotelSection {
+  height: 120vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2016/10/25/1136/Hyatt-At-The-Bellevue-P071-Balconies-with-City-View.jpg/Hyatt-At-The-Bellevue-P071-Balconies-with-City-View.16x9.jpg?imwidth=1920);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.hotelCol {
+  margin-left: 10rem;
+}
+
+.hotelTitle {
+  font-size: 4.5rem !important;
+  line-height: 5rem;
+  margin-top: 1.5rem;
+}
+
+.covidSection {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://www.visitphilly.com/wp-content/uploads/2019/11/philadelphia-skyline-william-penn-by-elevated-angles-2200x1237px-1600x897.jpg);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.sectionSplit{
+    height: 18rem;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     align-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    min-height: 100vh;
+    text-align: right;
+    background-color: #f8f9fa;
 }
-
-.landingTitle{
-    font-size: 4.2rem;
-    color:white;
-    font-weight: 900;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.562);
-}
-.landingSub{
-    font-size: 1.3rem;
-    color:white;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.562);
-}
-
-.landingLine{
-    display:flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
-
-.leftLine, .rightLine{
-    background: white;
-    height: .1rem;
-    width: 8rem;
-    margin-top: .6rem;
-}
-
-.landingButton{
-    color:#fff;
-    padding: .8rem 1rem .8rem 1rem;
-    font-weight: 900;
-    border: 1px solid white;
-    transition: 200ms ease all;
-    margin-left: -1rem;
-}
-
-.landingButton:hover{
-    color:#008a9c;
-    background-color: rgba(255, 255, 255, 0.904);
-}
-
-
-.landingButton2{
-    margin-left: 1rem;
-    color:#008a9c;
-    background-color: rgb(255, 255, 255);
-    padding: .8rem 1rem .8rem 1rem;
-    font-weight: 900;
-    border: 1px solid white;
-    transition: 200ms ease all;
-}
-
-.landingButton2:hover{
-    color:#005964;
-    background-color: rgba(255, 255, 255, 0.804);
-    border: 1px solid rgba(255, 255, 255, 0.804);
-}
-
-.navButton{
-    color:#fff;
-    padding: .4rem 1rem .4rem 1rem;
-    font-weight: 900;
-    border: 1px solid #008a9c;
-    background-color: #008a9c;
-    transition: 200ms ease all;
-    margin-left: -1rem;
-    margin-top: -.4rem;
-}
-.navButton:hover{
-    border: 1px solid #005964;
-    background-color: #005964;
-    color: #03383f;
-}
-.buttonCol{
-    display: flex;
-    margin-top: 1rem;
-    flex-direction: row;
-    text-transform: capitalize;
-}
-.aboutSection{
-    height: 25rem;
-    min-height: 25rem;
-    background-color:#f8f9fa;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.aboutImage{
-    background: url(https://www.visitphilly.com/wp-content/themes/visitphilly/dist/images/WatermarkStamp.png);
-    height: 20rem;
-    width: 20rem;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    margin-top: 25rem;
-    opacity: .09;
-    right: 6rem;
-}
-
-.aboutDesc{
-    font-size: 1.2rem;
+.splitTitle{
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    font-family: "Lora", serif !important;
+    color: #008a9c;
     font-weight: 100;
-    font-family: 'Lora', serif!important;
-    line-height: 2rem;
-    color: rgb(58, 58, 58);
-    margin-top: .4rem;
-}
-
-.aboutTitle{
-    font-size: 1.4rem;
-    letter-spacing: .3rem;
-    font-family: 'Lora', serif!important;
-    color:#008a9c;
-}
-
-.blogSection{
-    height: 100vh;
+    border-bottom: #008a9c 1px solid;
+    margin-right: 10rem;
+    padding-bottom: 1rem;
 }
 /*****Home Page Media queries*****/
 
-
 /*****Home Page Styling END*****/
-
-
 
 /*****Blog Page Styling*****/
 
-
 /*****Blog Page Media queries*****/
-
 
 /*****Blog Page Styling END*****/
 
-
-
 /*****About Page Styling*****/
-
 
 /*****About Page Media queries*****/
 
-
 /*****About Page Styling END*****/
 
-.footerWrapper{
-    height: 40rem;
+.footerWrapper {
+  height: 30rem;
+  background: #ffffff !important;
+  margin-bottom: -4rem;
+}
+
+.footerImage {
+  height: 30rem;
+  width: 100%;
 }

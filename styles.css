@@ -4,6 +4,9 @@ body {
     font-family: 'Noto Sans Display', sans-serif;
 }
 
+.italic{
+    font-style:italic!important;
+}
 a{
     text-decoration: none;
 }
@@ -101,6 +104,7 @@ a.link:hover{
 .navScrolled a {
     color:black!important;
 }
+
 .navScrolled ul li a{
     color:black!important;
 }
